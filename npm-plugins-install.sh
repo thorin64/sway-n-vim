@@ -10,3 +10,5 @@ sudo pacman -S fuzzel --noconfirm
 sudo pacman -R wofi --noconfirm
 sudo pacman -S fnott --noconfirm
 yay -S swayrst-git --noconfirm
+sudo pacman -S mako --noconfirm
+sudo pacman -S swww --noconfirm
