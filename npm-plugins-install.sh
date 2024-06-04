@@ -1,4 +1,4 @@
-#!bin/fish
+#!/bin/fish
 echo "installing"
 sudo npm i -g vscode-langservers-extracted --noconfirm
 go install github.com/nametake/golangci-lint-langserver@latest
