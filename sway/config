@@ -56,6 +56,7 @@ exec mako
 exec_always swaymsg "workspace 1; exec $term; splith;"
 exec_always sleep 0.4s && swaymsg "workspace 1; exec $term -e htop; splith;"
 exec_always sleep 0.8s && swaymsg "workspace 1; exec $term -e ranger; splitv;"
+exec_always swaymsg "workspace 1; focus left"
 ### Idle configuration
 #
 # Example configuration:
