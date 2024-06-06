@@ -5,7 +5,7 @@
 # Read `man 5 sway` for a complete reference.
 
 # Font config:
-font JetBrainsMono Nerd Font Medium 11
+font TerminessNerdFontMono 12
 
 ### Variables
 
@@ -41,7 +41,7 @@ set $menu fuzzel --show run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-# output * bg /home/thorin/Pictures/matrix4k.jpg fill
+output * bg ~/Imagens/matrixAnimated.gif fill
 #
 # Example configuration:
 #
@@ -51,8 +51,8 @@ set $menu fuzzel --show run
 
 ### auto exec
 exec mako
-exec swww-daemon
-exec swww img ~/Pictures/matrixAnimated.gif
+# exec swww-daemon
+# exec swww img ~/Imagens/matrixAnimated.gif
 exec_always swaymsg "workspace 1; exec $term; splith;"
 exec_always sleep 0.4s && swaymsg "workspace 1; exec $term -e htop; splith;"
 exec_always sleep 0.8s && swaymsg "workspace 1; exec $term -e ranger; splitv;"
@@ -88,7 +88,7 @@ exec_always sleep 0.8s && swaymsg "workspace 1; exec $term -e ranger; splitv;"
 
 ## Setting br keyboard
 input type:keyboard {
-    xkb_layout br,us
+    xkb_layout us,br
     xkb_options grp:rctrl_toggle
 }
 

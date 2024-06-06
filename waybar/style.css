@@ -2,10 +2,10 @@
     /* border: none; */
     /* border-radius: 4px; */
     /* `ttf-font-awesome` is required to be installed for icons */
-    font-family: JetBrains Mono Nerd Font, Roboto, Helvetica, Arial, sans-serif;
+    font-family: TerminessNerdFontMono, SymbolsNerdFontMono;
 
     /* adjust font-size value to your liking: */
-    font-size: 13px;
+    font-size: 14px;
 }
 
 window#waybar {
