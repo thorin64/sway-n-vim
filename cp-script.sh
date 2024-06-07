@@ -6,3 +6,4 @@ cp -rf nvim/ ~/.config/
 cp -rf ranger/ ~/.config/
 cp -rf sway/ ~/.config/
 cp -rf waybar/ ~/.config/
+cp -rf foot/ ~/.config/
