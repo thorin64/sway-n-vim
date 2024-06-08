@@ -132,10 +132,10 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": " ({signalStrength}%)",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ipaddr} via {gwaddr} 󰩟",
-        "format-linked": "{ifname} (No IP) 󰲜",
-        "format-disconnected": "Offline 󰈂",
+        "format-ethernet": "{ipaddr}/{cidr}  ",
+        "tooltip-format": "{ipaddr} via {gwaddr} 󰩟 ",
+        "format-linked": "{ifname} (No IP) 󰲜 ",
+        "format-disconnected": "Offline 󰈂 ",
         // "format-alt": "{ifname}: {ipaddr}/{cidr}",
 	// "interval": 30,
         "on-click": "foot nmtui"
@@ -149,7 +149,7 @@
         "format-source": " {volume}%",
         "format-source-muted": " ",
         "format-icons": {
-            "headphone": "",
+            "headphone": " ",
             "hands-free": "",
             "headset": "",
             "phone": "",
