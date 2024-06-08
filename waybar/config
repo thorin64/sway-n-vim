@@ -90,12 +90,12 @@
 	"interval": 1
     },
     "cpu": {
-        "format": "{usage}%  ",
+        "format": "{usage}%  ",
         "tooltip": false,
 	"interval": 2
     },
     "memory": {
-        "format": "{}%  ",
+        "format": "{}%  ",
 	"interval": 2
     },
     "temperature": {
@@ -104,7 +104,7 @@
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""],
+        "format-icons": ["", "", ""],
 	"interval": 2
     },
     "backlight": {
@@ -119,7 +119,7 @@
             "critical": 15
         },
         "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
+        "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{icon} {time}",
         // "format-good": "", // An empty format will hide the module
@@ -132,10 +132,10 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": " ({signalStrength}%)",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ipaddr} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Offline ⚠",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ipaddr} via {gwaddr} 󰩟",
+        "format-linked": "{ifname} (No IP) 󰲜",
+        "format-disconnected": "Offline 󰈂",
         // "format-alt": "{ifname}: {ipaddr}/{cidr}",
 	// "interval": 30,
         "on-click": "foot nmtui"
@@ -150,10 +150,10 @@
         "format-source-muted": " ",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "hands-free": "",
+            "headset": "",
             "phone": "",
-            "portable": "",
+            "portable": "",
             "car": "",
             "default": ["", "", " "]
         },
@@ -162,7 +162,7 @@
     "custom/media": {
         "format": "{icon} {}",
         "return-type": "json",
-        "max-length": 40,
+        "max-length": 40, 
         "format-icons": {
             "spotify": "",
             "default": "🎜"
