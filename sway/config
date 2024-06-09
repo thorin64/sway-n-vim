@@ -12,7 +12,7 @@ font TerminessNerdFontMono 12
 ## configuration for looks on the window of sway
 #client.<class>         <border>  <background>    <text>      <indicator>   <child_border> 
 
-client.focused          "#77dd88" "#00000080"      "#55af66"   "#77dd88" "#77dd88"
+client.focused          "#55af66" "#00000080"      "#55af66"   "#77dd88" "#77dd88"
 
 client.focused_inactive "#3a553a" "#00000080"      "#55af66"   "#3a553a" "#3a553a"
 
@@ -229,7 +229,7 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-#Volume Control
+#Custom Binds
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
@@ -237,7 +237,13 @@ bindsym XF86Launch1 exec foot -e nvim Projects/
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+##
+#No titlebars
 #
+# default_border none 
+for_window [title="^.*"] title_format ""
+default_border pixel 1
+default_floating_border pixel 1
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
