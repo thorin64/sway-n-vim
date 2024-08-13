@@ -12,13 +12,13 @@ font TerminessNerdFontMono 12
 ## configuration for looks on the window of sway
 #client.<class>         <border>  <background>    <text>      <indicator>   <child_border> 
 
-client.focused          "#55af66" "#00000080"      "#55af66"   "#77dd88" "#77dd88"
+client.focused          "#00ff41" "#00000080"      "#008f11"   "#00ff41" "#00ff41"
 
-client.focused_inactive "#3a553a" "#00000080"      "#55af66"   "#3a553a" "#3a553a"
+client.focused_inactive "#113311" "#00000080"      "#00ff41"   "#008f11" "#113311"
 
-client.unfocused        "#3a553a" "#00000080"      "#3a553a"  "#3a553a"  "#3a553a"
+client.unfocused        "#113311" "#00000080"      "#008f11"  "#008f11"  "#113311"
 
-client.urgent           "#77ffbb" "#00000080"      "#55ff66"  "#77ffbb"  "#77ffbb"
+client.urgent           "#e4d00a" "#00000080"      "#00ff41"  "#e4d00a"  "#e4d00a"
 
 # Gaps between windows
 gaps inner 5px
@@ -41,7 +41,7 @@ set $menu fuzzel --show run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Imagens/matrixAnimated.gif fill
+# output * bg ~/Imagens/matrixAnimated.gif fill
 #
 # Example configuration:
 #
@@ -51,8 +51,9 @@ output * bg ~/Imagens/matrixAnimated.gif fill
 
 ### auto exec
 exec mako
-# exec swww-daemon
-# exec swww img ~/Imagens/matrixAnimated.gif
+exec swww-daemon
+exec swww img ~/Pictures/matrixAnimated.gif
+exec lxqt-policykit-agent
 exec_always swaymsg "workspace 1; exec $term; splith;"
 exec_always sleep 0.4s && swaymsg "workspace 1; exec $term -e htop; splith;"
 exec_always sleep 0.8s && swaymsg "workspace 1; exec $term -e ranger; splitv;"
@@ -89,7 +90,7 @@ exec_always sleep 1.0s && swaymsg "focus left"
 
 ## Setting br keyboard
 input type:keyboard {
-    xkb_layout us,br
+    xkb_layout br,us
     xkb_options grp:rctrl_toggle
 }
 
@@ -229,21 +230,21 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-#Custom Binds
+#Volume Control
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-bindsym XF86Launch1 exec foot -e nvim Projects/
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
-##
+
 #No titlebars
 #
 # default_border none 
 for_window [title="^.*"] title_format ""
 default_border pixel 1
 default_floating_border pixel 1
+
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.

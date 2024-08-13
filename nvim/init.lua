@@ -1,5 +1,4 @@
 --[[
-
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
 =====================================================================
@@ -43,6 +42,10 @@ P.S. You can delete this when you're done too. It's your config now :)
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+
+-- matrix theme config
+vim.g.matrix_disable_background = true
+vim.g.matrix_italic = false
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    https://github.com/folke/lazy.nvim
@@ -126,9 +129,41 @@ require('lazy').setup({
       'rafamadriz/friendly-snippets',
     },
   },
+-- mini icons snippet
+  { 'echasnovski/mini.nvim', version = false },
 
+-- NeoGit 
+{
+  "NeogitOrg/neogit",
+  dependencies = {
+    "nvim-lua/plenary.nvim",         -- required
+    "sindrets/diffview.nvim",        -- optional - Diff integration
+
+    -- Only one of these is needed, not both.
+    "nvim-telescope/telescope.nvim", -- optional
+    "ibhagwan/fzf-lua",              -- optional
+  },
+  config = true
+},
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim', opts = {} },
+{
+  "folke/which-key.nvim",
+  event = "VeryLazy",
+  opts = {
+    -- your configuration comes here
+    -- or leave it empty to use the default settings
+    -- refer to the configuration section below
+  },
+  keys = {
+    {
+      "<leader>?",
+      function()
+        require("which-key").show({ global = false })
+      end,
+      desc = "Buffer Local Keymaps (which-key)",
+    },
+  },
+},
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -204,14 +239,23 @@ require('lazy').setup({
     },
   },
   {
-    "folke/tokyonight.nvim",
-    lazy = false, -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000, -- make sure to load this before all the other start plugins
+    'iruzo/matrix-nvim',
+    lazy = false,
+    priority = 1000,
     config = function()
       -- load the colorscheme here
-     vim.cmd([[colorscheme tokyonight-night]])
+     vim.cmd([[colorscheme matrix]])
     end,
   },
+-- {
+--     "folke/tokyonight.nvim",
+--     lazy = false, -- make sure we load this during startup if it is your main colorscheme
+--     priority = 1000, -- make sure to load this before all the other start plugins
+--     config = function()
+--      load the colorscheme here
+--      vim.cmd([[colorscheme tokyonight-night]])
+--     end,
+--   },
   {
     -- -- Theme inspired by Atom
     -- 'navarasu/onedark.nvim',
