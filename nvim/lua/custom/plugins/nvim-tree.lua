@@ -7,6 +7,13 @@ return {
     "antosha417/nvim-lsp-file-operations",
   },
   config = function()
-    require("nvim-tree").setup {}
+    require("nvim-tree").setup {
+      open_on_tab = false,
+      hijack_cursor = false,
+      update_cwd = true,
+      diagnostics = {
+        enable = true
+      },
+    }
   end,
 }

@@ -11,7 +11,7 @@
 window#waybar {
     background-color: rgba(0, 0, 0, 0.5);
     border-bottom: 3px solid rgba(58, 85, 58, 0.5);
-    color: #55af66;
+    color: #00ff41;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -41,7 +41,7 @@ window#waybar.chromium {
 #workspaces button {
     padding: 0 0.4em;
     background-color: transparent;
-    color: #55af66;
+    color: #00ff41;
     /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -2px transparent;
 }
@@ -49,20 +49,20 @@ window#waybar.chromium {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
     background: rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 -2px #55af66;
+    box-shadow: inset 0 -2px #00ff41;
 }
 
 #workspaces button.focused {
     background-color: rgba(58, 85, 58, 0.2);
-    box-shadow: inset 0 -2px #55af66;
+    box-shadow: inset 0 -2px #00ff41;
 }
 
 #workspaces button.urgent {
     /* padding: 0 0.4em; */
     /* color: #000000; */
-    border: solid 1px #55af66;
+    border: solid 1px #00ff41;
     background-color: transparent;
-    box-shadow: inset 0 -2px #55af66;
+    box-shadow: inset 0 -2px #00ff41;
 }
 
 #mode {
@@ -86,8 +86,8 @@ window#waybar.chromium {
 #mpd {
     padding: 0 5px;
     margin: 6px 3px; 
-    color: #55af66;
-    border: solid 1px #55af66;
+    color: #00ff41;
+    border: solid 1px #00ff41;
 }
 
 #window,
@@ -106,19 +106,19 @@ window#waybar.chromium {
 }
 
 #clock {
-    color: #55af66;
+    color: #00ff41;
 }
 
 #bluetooth {
-    color: #55af66;
+    color: #00ff41;
 }
 
 #battery {
-    color: #55af66;
+    color: #00ff41;
 }
 
 #battery.charging {
-    color: #55af66;
+    color: #00ff41;
 }
 
 @keyframes blink {
@@ -129,7 +129,7 @@ window#waybar.chromium {
 }
 
 #battery.critical:not(.charging) {
-    color: #55af66;
+    color: #00ff41;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -142,60 +142,64 @@ label:focus {
 }
 
 #cpu {
-    color: #55af66;
+    color: #00ff41;
 }
 
 #memory {
-    color: #55af66;
+    color: #00ff41;
 }
 
 #backlight {
-    color: #55af66;
+    color: #00ff41;
 }
 
 #network {
-    color: #55af66;
+    color: #00ff41;
 }
 
 #network.disconnected {
-    color: #55af66;
+    color: #00ff41;
 }
 
 #pulseaudio {
-    color: #55af66;
+    color: #00ff41;
 }
 
 #pulseaudio.muted {
-    color: #55af66;
+    color: #00ff41;
 }
 
 #custom-media {
-    color: #55af66;
+    color: #00ff41;
+}
+
+#custom-media {
+    color: #00ff41;
     min-width: 100px;
 }
 
 #custom-media.custom-spotify {
-    color: #55af66;
+    color: #00ff41;
 }
 
 #custom-media.custom-vlc {
-    color: #55af66;
+    color: #00ff41;
 }
 
 #temperature {
-    color: #55af66;
+    color: #00ff41;
 }
 
 #temperature.critical {
-    color: #55af66;
+    color: #00ff41;
 }
 
 #tray {
-    color: #55af66;
+    color: #00ff41;
 }
 
 #idle_inhibitor {
-    color: #55af66;
+    color: #00ff41;
 }
 
 #idle_inhibitor.activated {
@@ -204,7 +208,7 @@ label:focus {
 }
 
 #mpd {
-    color: #55af66;
+    color: #00ff41;
 }
 
 #mpd.disconnected {
@@ -220,9 +224,9 @@ label:focus {
 }
 
 #language {
-    color: #55af66;
+    color: #00ff41;
     padding: 0 5px;
     margin: 6px 3px;
-    border: solid 1px #55af66;
+    border: solid 1px #00ff41;
     min-width: 16px;
 }

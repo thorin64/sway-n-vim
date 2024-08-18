@@ -54,7 +54,7 @@ exec mako
 exec swww-daemon
 exec swww img ~/Pictures/matrixAnimated.gif
 exec lxqt-policykit-agent
-exec_always swaymsg "workspace 1; exec $term; splith;"
+exec_always swaymsg "workspace 1; exec $term -e nvim ~/Projects; splith;"
 exec_always sleep 0.4s && swaymsg "workspace 1; exec $term -e htop; splith;"
 exec_always sleep 0.8s && swaymsg "workspace 1; exec $term -e ranger; splitv;"
 exec_always sleep 1.0s && swaymsg "focus left"
