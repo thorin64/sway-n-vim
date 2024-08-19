@@ -425,7 +425,7 @@ require("null-ls").setup({
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
   { import = 'custom.plugins' },
-}, {})
+  }, {})
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
@@ -749,7 +749,7 @@ local servers = {
   volar = {},
   cssls = {},
 --  css_variables = {},
-  cssmodules_ls = {},
+--  cssmodules_ls = {},
   sqlls = {},
   vimls = {},
   bashls = {},
