@@ -42,6 +42,7 @@ P.S. You can delete this when you're done too. It's your config now :)
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+vim.o.termguicolors = true
 
 -- matrix theme config
 vim.g.matrix_disable_background = true
@@ -170,11 +171,11 @@ require("null-ls").setup({
 })
     end,
 },
-  -- null ls for linting
-  -- {
-  -- "nvimtools/none-ls.nvim",
-  -- opts = {},
-  -- },
+  --null ls for linting
+  {
+  "nvimtools/none-ls.nvim",
+  opts = {},
+  },
   -- folke trouble just search for it!
   {
   "folke/trouble.nvim",
@@ -720,7 +721,8 @@ require('which-key').add {
 -- before setting up the servers.
 require('mason').setup()
 require('mason-lspconfig').setup()
-
+require('colorizer').setup()
+vim.cmd([[set termguicolors]])
 -- Enable the following language servers
 --  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
 --
