@@ -48,12 +48,6 @@ vim.g.matrix_disable_background = true
 vim.g.matrix_italic = false
 
 -- [[ Install `lazy.nvim` plugin manager ]]
-local function open_nvim_tree()
-
-  -- open the tree
-  require("nvim-tree.api").tree.open()
-end
-vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
