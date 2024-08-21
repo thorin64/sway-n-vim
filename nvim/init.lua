@@ -176,6 +176,10 @@ require("null-ls").setup({
   "nvimtools/none-ls.nvim",
   opts = {},
   },
+    --colorizer
+  {
+    "norcalli/nvim-colorizer.lua"
+  },
   -- folke trouble just search for it!
   {
   "folke/trouble.nvim",
