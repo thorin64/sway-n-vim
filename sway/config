@@ -41,7 +41,7 @@ set $menu fuzzel --show run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-# output * bg ~/Imagens/matrixAnimated.gif fill
+output * bg ~/Pictures/matrixDark.jpg center
 #
 # Example configuration:
 #
@@ -51,13 +51,17 @@ set $menu fuzzel --show run
 
 ### auto exec
 exec mako
-exec swww-daemon
-exec swww img ~/Pictures/matrixAnimated.gif
 exec lxqt-policykit-agent
-exec_always swaymsg "workspace 1; exec $term -e nvim ~/Projects; splith;"
-exec_always sleep 0.4s && swaymsg "workspace 1; exec $term -e htop; splith;"
-exec_always sleep 0.8s && swaymsg "workspace 1; exec $term -e ranger; splitv;"
-exec_always sleep 1.0s && swaymsg "focus left"
+exec_always swaymsg "workspace 1; splith;"
+exec_always swaymsg "workspace 1; exec $term -e nvim ~/Notes/todo.md; splith;"
+exec_always sleep 0.8s && swaymsg "workspace 1; exec $term; splitv;"
+exec_always sleep 0.9s && swaymsg "focus up"
+exec_always sleep 1.0s && swaymsg "workspace 1; exec $term -e ranger; splith; mode "resize";"
+exec_always sleep 1.1s && swaymsg "workspace 1; exec $term -e htop; splith;"
+exec_always sleep 1.2s && swaymsg "focus left"
+exec_always sleep 1.3s && swaymsg "focus left; resize shrink width 250px; mode "default";"
+exec_always sleep 1.4s && swaymsg "focus down; mode "default";"
+exec_always sleep 1.6s && swaymsg "exec $term; splith;"
 ### Idle configuration
 #
 # Example configuration:
@@ -90,8 +94,9 @@ exec_always sleep 1.0s && swaymsg "focus left"
 
 ## Setting br keyboard
 input type:keyboard {
-    xkb_layout br,us
-    xkb_options grp:rctrl_toggle
+    xkb_layout br
+    xkb_variant thinkpad
+    # xkb_options grp:rctrl_toggle
 }
 
 # Basics:
@@ -237,6 +242,11 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86AudioStop exec playerctl stop
+bindsym XF86Launch1 exec lutris
+bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
 #No titlebars
 #

@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "tray", "cpu", "memory", "temperature", "backlight", "sway/mode", "sway/scratchpad", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": [ "pulseaudio", "network", "keyboard-state", "sway/language", "battery", "clock", ],
+    "modules-right": [ "pulseaudio", "bluetooth", "network", "keyboard-state", "sway/language", "battery", "clock", ],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -121,6 +121,7 @@
         "format": "{icon} {capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
+	"interval": 4,
         "format-alt": "{icon} {time}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
@@ -137,15 +138,15 @@
         "format-linked": "{ifname} (No IP) 󰲜 ",
         "format-disconnected": "Offline 󰈂 ",
         // "format-alt": "{ifname}: {ipaddr}/{cidr}",
-	// "interval": 30,
+	// "interval": 10,
         "on-click": "foot nmtui"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": "  {format_source}",
         "format-source": " {volume}%",
         "format-source-muted": " ",
         "format-icons": {
@@ -175,7 +176,7 @@
   	// "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
   	"format": " {status}",
         "on-click": "blueman-manager",
-  	"format-disabled": "", // an empty format will hide the module
+  	"format-disabled": " off", // an empty format will hide the module
   	"format-connected": " {num_connections} connected",
   	"tooltip-format": "{controller_alias}\t{controller_address}",
   	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",

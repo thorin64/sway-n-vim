@@ -180,6 +180,18 @@ require("null-ls").setup({
   {
     "norcalli/nvim-colorizer.lua"
   },
+  -- terminal.nvim
+  {
+  "rebelot/terminal.nvim",
+  opts = {}, -- for default options, refer to the configuration section for custom setup.
+  keys = {
+      {
+        "<leader>tt",
+        "<cmd>TermToggle<cr>",
+        desc = "Open Terminal.nvim",
+      },
+    },
+  },
   -- folke trouble just search for it!
   {
   "folke/trouble.nvim",
@@ -726,6 +738,13 @@ require('which-key').add {
 require('mason').setup()
 require('mason-lspconfig').setup()
 require('colorizer').setup()
+require('terminal').setup(
+  {
+    layout = { open_cmd = "float", height = 0.6, width = 0.6 },
+    cmd = { vim.o.shell },
+    autoclose = false,
+  }
+)
 vim.cmd([[set termguicolors]])
 -- Enable the following language servers
 --  Feel free to add/remove any LSPs that you want here. They will automatically be installed.

@@ -1,4 +1,11 @@
-if status is-interactive
-    #    set -x SSH_AUTH_SOCK /run/user/1000/keyring/ssh
-    # Commands to run in interactive sessions can go here
+if status --is-interactive
+    keychain --quiet --agents ssh 
 end
+
+begin
+    set -l HOSTNAME thinkpad
+    if test -f ~/.keychain/$HOSTNAME-fish
+        source ~/.keychain/$HOSTNAME-fish
+    end
+end
+
