@@ -43,10 +43,12 @@ P.S. You can delete this when you're done too. It's your config now :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.o.termguicolors = true
-
 -- matrix theme config
 vim.g.matrix_disable_background = true
 vim.g.matrix_italic = false
+
+--Terminal Escape
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    https://github.com/folke/lazy.nvim
@@ -180,15 +182,16 @@ require("null-ls").setup({
   {
     "norcalli/nvim-colorizer.lua"
   },
-  -- terminal.nvim
+  -- terminal
   {
-  "rebelot/terminal.nvim",
+  "akinsho/toggleterm.nvim",
+  version = "*",
   opts = {}, -- for default options, refer to the configuration section for custom setup.
   keys = {
       {
         "<leader>tt",
-        "<cmd>TermToggle<cr>",
-        desc = "Open Terminal.nvim",
+        "<cmd>ToggleTerm<cr>",
+        desc = "Open Terminal",
       },
     },
   },
@@ -738,13 +741,24 @@ require('which-key').add {
 require('mason').setup()
 require('mason-lspconfig').setup()
 require('colorizer').setup()
-require('terminal').setup(
-  {
-    layout = { open_cmd = "float", height = 0.6, width = 0.6 },
-    cmd = { vim.o.shell },
-    autoclose = false,
-  }
-)
+require('toggleterm').setup{
+  size = 10,
+  direction = 'horizontal',
+  float_opts = {
+    -- The border key is *almost* the same as 'nvim_open_win'
+    -- see :h nvim_open_win for details on borders however
+    -- the 'curved' border is a custom border type
+    -- not natively supported but implemented in this plugin.
+    border = 'single',
+    width = 80,
+    height = 30,
+    -- row = <value>,
+    -- col = <value>,
+    -- winblend = 3,
+    -- zindex = <value>,
+    title_pos = 'center'
+  },
+}
 vim.cmd([[set termguicolors]])
 -- Enable the following language servers
 --  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
@@ -760,7 +774,6 @@ local servers = {
   gopls = {},
   -- pyright = {},
   rust_analyzer = {},
-  tsserver = {},
   html = {filetypes = {'html', 'twig', 'hbs'}},
   pylsp = {},
   cobol_ls = {},

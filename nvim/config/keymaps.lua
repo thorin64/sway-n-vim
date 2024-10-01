@@ -3,15 +3,15 @@
 -- Add any additional keymaps here
 
 --NvimTree
-keymap('n', '<leader>e', 'NvimTreeToggle<cr>', opts)
+vim.keymap.set('n', '<leader>e', 'NvimTreeToggle<cr>')
 
-keymap('n', '<leader>Up', '<C-w>Up', opts)
-keymap('n', '<leader>Down', '<C-w>Down', opts)
-keymap('n', '<leader>Left', '<C-w>Left', opts)
-keymap('n', '<leader>Right', '<C-w>Right', opts)
+vim.keymap.set('n', '<leader>Up', '<C-w>Up')
+vim.keymap.set('n', '<leader>Down', '<C-w>Down')
+vim.keymap.set('n', '<leader>Left', '<C-w>Left')
+vim.keymap.set('n', '<leader>Right', '<C-w>Right')
 
-keymap('n', '<leader>1', '1gt', opts)
-keymap('n', '<leader>2', '2gt', opts)
-keymap('n', '<leader>3', '3gt', opts)
-keymap('n', '<leader>4', '4gt', opts)
-keymap('n', '<leader>5', '5gt', opts)
+vim.keymap.set('n', '<leader>1', '1gt')
+vim.keymap.set('n', '<leader>2', '2gt')
+vim.keymap.set('n', '<leader>3', '3gt')
+vim.keymap.set('n', '<leader>4', '4gt')
+vim.keymap.set('n', '<leader>5', '5gt')

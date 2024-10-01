@@ -21,8 +21,8 @@ client.unfocused        "#113311" "#00000080"      "#008f11"  "#008f11"  "#11331
 client.urgent           "#e4d00a" "#00000080"      "#00ff41"  "#e4d00a"  "#e4d00a"
 
 # Gaps between windows
-gaps inner 5px
-gaps outer 5px
+gaps inner 3px
+gaps outer 3px
 
 # Logo key. Use Mod1 for Alt. | Mod4 for Super
 set $mod Mod1
@@ -67,13 +67,23 @@ exec_always sleep 1.6s && swaymsg "exec $term; splith;"
 # Example configuration:
 #
 # exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
+#           timeout 300 'swaylock -f --image ~/Pictures/matrixDark.jpg'' \
+#           timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+#          before-sleep 'swaylock -f --image ~/Pictures/matrixDark.jpg'
+set $lock swaylock -f --image ~/Pictures/matrixDark.jpg
+
+exec swayidle -w \
+      timeout 600 'exec $lock; swaymsg "output * power off"' \
+      before-sleep 'playerctl pause; exec $lock; swaymsg "output * power off"' \
+      unlock 'swaymsg "output * power on"' \
+      after-resume 'swaymsg "output * power on"'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
+
+#princ screen bind
+    bindsym $mod+Print exec sway-screenshot -m region --silent --clipboard-only
 
 ### Input configuration
 #
@@ -210,6 +220,7 @@ input type:keyboard {
     # Show the next scratchpad window or hide the focused scratchpad window.
     # If there are multiple scratchpad windows, this command cycles through them.
     bindsym $mod+minus scratchpad show
+    bindsym $mod+Tab scratchpad show
 #
 # Resizing containers:
 #
