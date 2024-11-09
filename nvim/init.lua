@@ -785,7 +785,6 @@ local servers = {
   sqlls = {},
   vimls = {},
   bashls = {},
-  asm_lsp = {},
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },

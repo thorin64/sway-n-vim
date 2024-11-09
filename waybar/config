@@ -83,10 +83,10 @@
     },
     "clock": {
         // "timezone": "America/Sao_Paulo",
-	"format": "{:%H:%M:%S}",
+	"format-alt": "{:%H:%M:%S}",
 	"height": 20,
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%d/%m/%Y}",
+        "format": "{:%d/%m/%Y}",
 	"interval": 1
     },
     "cpu": {
@@ -144,18 +144,18 @@
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon}  {format_source}",
+        "format-bluetooth-muted": " {icon}  {format_source}",
         "format-muted": "  {format_source}",
         "format-source": " {volume}%",
         "format-source-muted": " ",
         "format-icons": {
             "headphone": " ",
             "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
+            "headset": " ",
+            "phone": " ",
+            "portable": " ",
+            "car": " ",
             "default": ["", "", " "]
         },
         "on-click": "pavucontrol"
@@ -177,7 +177,7 @@
   	"format": " {status}",
         "on-click": "blueman-manager",
   	"format-disabled": " off", // an empty format will hide the module
-  	"format-connected": " {num_connections} connected",
+  	"format-connected": " {num_connections}",
   	"tooltip-format": "{controller_alias}\t{controller_address}",
   	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
   	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
