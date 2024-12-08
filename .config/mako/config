@@ -1,0 +1,10 @@
+max-history=3
+on-button-left=dismiss-group
+font=TerminessNerdFont
+background-color=#00000080
+text-color=#55af66
+border-size=1
+border-color=#77dd88
+progress-color=over #55af66
+icon-path=/usr/share/fonts/TTF/SymbolsNerdFont-Regular.ttf
+default-timeout=5000

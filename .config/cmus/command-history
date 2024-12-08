@@ -1,0 +1,12 @@
+refresh 
+add Music/
+q
+clear
+r
+live-filter 
+q1
+reshuffle
+help
+refresh
+refresh *
+add ~/Music/
