@@ -77,11 +77,12 @@ exec_always sleep 1.6s && swaymsg "exec $term -e cmus; splith;"
 #           timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
 #          before-sleep 'swaylock -f --image ~/Pictures/matrixDark.jpg'
 set $lock swaylock -f --image ~/Pictures/matrixDark.jpg
-bindsym $mod+Shift+l exec $lock
-exec swayidle -w \
-      before-sleep 'playerctl pause; exec $lock; swaymsg "output * power off"' \
-      unlock 'swaymsg "output * power on"' \
-      resume 'swaymsg "output * power on"'
+bindsym $mod+Shift+l exec systemctl suspend
+exec_always swayidle -w \
+    lock 'exec $lock' \
+    before-sleep 'playerctl pause; exec $lock; swaymsg "output * power off"' \
+    unlock 'swaymsg "output * power on"' \
+    after-resume 'swaymsg "output * power on"'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
