@@ -23,7 +23,7 @@ client.urgent           "#e4d00a" "#00000080"      "#00ff41"  "#e4d00a"  "#e4d00
 # Gaps between windows
 gaps inner 3px
 gaps outer 3px
-
+exec darkman set dark
 # Logo key. Use Mod1 for Alt. | Mod4 for Super
 set $mod Mod1
 # Home row direction keys, like vim
@@ -107,7 +107,7 @@ exec_always swayidle -w \
 
 ### Key bindings
 #
-
+bindsym $mod+Shift+e exec nautilus
 ## Setting br keyboard
 input type:keyboard {
     xkb_layout us,br
@@ -137,7 +137,7 @@ input type:keyboard {
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+Delete exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 #
 # Moving around:
 #

@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "tray", "cpu", "memory", "temperature", "backlight", "sway/mode", "sway/scratchpad"],
     "modules-center": ["sway/window"],
-    "modules-right": [ "pulseaudio", "bluetooth", "network", "keyboard-state", "sway/language", "battery", "clock", ],
+    "modules-right": [ "pulseaudio", "network", "keyboard-state", "sway/language", "battery", "clock", ],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
