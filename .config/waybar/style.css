@@ -83,7 +83,6 @@ window#waybar.chromium {
 #mode,
 #bluetooth,
 #idle_inhibitor,
-#keyboard-state,
 #mpd {
     padding: 0 5px;
     margin: 6px 3px; 
@@ -91,6 +90,13 @@ window#waybar.chromium {
     border: solid 1px #00ff41;
 }
 
+#keyboard-state {
+    padding: 0 5px;
+    padding-right: 9.5px;
+    margin: 6px 3px; 
+    color: #00ff41;
+    border: solid 1px #00ff41;
+}
 #window,
 #workspaces {
     margin: 0 4px;

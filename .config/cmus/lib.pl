@@ -194,9 +194,9 @@
 /home/thorin/Music/Bonsai, CIANO - Noite Fria.mp3
 /home/thorin/Music/Bonsai, CIANO - Fumaça.mp3
 /home/thorin/Music/Bonsai, CIANO - Não É Problema Meu.mp3
-/home/thorin/Music/Bonsai, VECTOR COLETIVO DELTA, gust, CIANO - EU SÓ QUERO MUDAR.mp3
 /home/thorin/Music/Bonsai, VECTOR COLETIVO DELTA, gust, CIANO - REIKI.mp3
 /home/thorin/Music/Bonsai, VECTOR COLETIVO DELTA, gust, CIANO - PÉ NAS COSTAS.mp3
+/home/thorin/Music/Bonsai, VECTOR COLETIVO DELTA, gust, CIANO - EU SÓ QUERO MUDAR.mp3
 /home/thorin/Music/Bonsai, VECTOR COLETIVO DELTA, CIANO, gust - BIN LADEN.mp3
 /home/thorin/Music/Bonsai, VECTOR COLETIVO DELTA, gust, CIANO - O FERVO.mp3
 /home/thorin/Music/Bonsai, VECTOR COLETIVO DELTA, gust, CIANO - CHAVE MICHA.mp3
