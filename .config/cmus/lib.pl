@@ -1,9 +1,26 @@
+/home/thorin/Music/SnapTube Audio/[BEST ONE] Siinamota - Young Girl A [BREAKCORE EXTENDED REMIX].opus
+/home/thorin/Music/SnapTube Audio/Chrono Trigger_ Secret of the Forest - Contraband VGM -  クロノトリガー.m4a
+/home/thorin/Music/SnapTube Audio/Chrono Trigger - Secret of the Forest (PC-98 - YM2608 Arrange).m4a
+/home/thorin/Music/SnapTube Audio/C. Monteverdi _ Lamento della Ninfa [excerpt].m4a
+/home/thorin/Music/SnapTube Audio/Crystal Waters - Gypsy Woman (She_s Homeless) (Lyrics).m4a
+/home/thorin/Music/SnapTube Audio/Dido_s Lament.m4a
+/home/thorin/Music/SnapTube Audio/Divine Bloodlines (feat. Ari Mason).m4a
+/home/thorin/Music/SnapTube Audio/Drake — Love All (Unreleased Version).m4a
+/home/thorin/Music/SnapTube Audio/GONE, GONE _ THANK YOU but it will change your life.m4a
+/home/thorin/Music/SnapTube Audio/I_LL NEVER SMILE AGAIN ~ Tommy Dorsey & His Orchestra (1940).m4a
 /home/thorin/Music/SnapTube Audio/Luccas_Carlos_-_A_Noite_Caiu.mp3
+/home/thorin/Music/SnapTube Audio/Mayhem - BEST QUALITY - W_Dead & Euronymous - Deathcrush.m4a
+/home/thorin/Music/SnapTube Audio/meet the grahams x great fairy_s fountain [full version].m4a
 /home/thorin/Music/SnapTube Audio/Midnight___Wii_Room_gettvid.com.mp3
+/home/thorin/Music/SnapTube Audio/Puppet x Great Fairy_s Fountain.m4a
 /home/thorin/Music/SnapTube Audio/Satoshi_Bandoh___Dark_Line_gettvid.com.mp3
 /home/thorin/Music/SnapTube Audio/Stevia_Sphere___Thats_Not_Vaporwave_gettvid.com.mp3
+/home/thorin/Music/SnapTube Audio/The Legend of Zelda - Dungeon Theme [NES] Remake HQ Music.m4a
+/home/thorin/Music/SnapTube Audio/Title Theme - The Legend of Zelda_ Ocarina of Time OST _ Remastered.m4a
 /home/thorin/Music/SnapTube Audio/Wii_no_Ma_OST___Theater_Room_gettvid.com.mp3
+/home/thorin/Music/SnapTube Audio/Young Girl A (English Cover)「少女A」【Will Stetson】.opus
 /home/thorin/Music/SnapTube Audio/ytmp3-convert.com_320kbps-gt6-lunar-mare-menu-bgm.mp3
+/home/thorin/Music/SnapTube Audio/椎名もた(siinamota) - Young Girl A _ 少女A.opus
 /home/thorin/Music/SnapTube Audio/ＳＰＡＣＥ　ＴＲＩＰ [ Chillwave - Synthwave - Retrowave Mix ].mp3
 /home/thorin/Music/SnapTube Audio/the neighbors - sweater weather (slowed   reverb)(MP3_320K).mp3
 /home/thorin/Music/SnapTube Audio/1nonly - stay with me (prod. nategoyard)(MP3_160K)_1.mp3
@@ -184,6 +201,13 @@
 /home/thorin/Music/Beach Fuzz - I Think I'm Falling for Her.mp3
 /home/thorin/Music/Beherit - Salomon's Gate.mp3
 /home/thorin/Music/Beherit - Pagan Moon.mp3
+/home/thorin/Music/01. The Vampires in The Dawn of Blood (Intro).mp3
+/home/thorin/Music/02. Claws of Wolvein.mp3
+/home/thorin/Music/03. Profane Rituals.mp3
+/home/thorin/Music/04. Midnight Fog.mp3
+/home/thorin/Music/05. Transilvanian Forests.mp3
+/home/thorin/Music/06. Black Metal Face.mp3
+/home/thorin/Music/07. Mourning Soul (Cover).mp3
 /home/thorin/Music/Blue Rain Boots - Good Old Days.mp3
 /home/thorin/Music/Blue Rain Boots - 2023.mp3
 /home/thorin/Music/Bonsai, CIANO - Off.mp3
@@ -194,9 +218,9 @@
 /home/thorin/Music/Bonsai, CIANO - Noite Fria.mp3
 /home/thorin/Music/Bonsai, CIANO - Fumaça.mp3
 /home/thorin/Music/Bonsai, CIANO - Não É Problema Meu.mp3
+/home/thorin/Music/Bonsai, VECTOR COLETIVO DELTA, gust, CIANO - EU SÓ QUERO MUDAR.mp3
 /home/thorin/Music/Bonsai, VECTOR COLETIVO DELTA, gust, CIANO - REIKI.mp3
 /home/thorin/Music/Bonsai, VECTOR COLETIVO DELTA, gust, CIANO - PÉ NAS COSTAS.mp3
-/home/thorin/Music/Bonsai, VECTOR COLETIVO DELTA, gust, CIANO - EU SÓ QUERO MUDAR.mp3
 /home/thorin/Music/Bonsai, VECTOR COLETIVO DELTA, CIANO, gust - BIN LADEN.mp3
 /home/thorin/Music/Bonsai, VECTOR COLETIVO DELTA, gust, CIANO - O FERVO.mp3
 /home/thorin/Music/Bonsai, VECTOR COLETIVO DELTA, gust, CIANO - CHAVE MICHA.mp3
@@ -209,6 +233,7 @@
 /home/thorin/Music/SnapTube Audio/Steven Universe - Here Comes a Thought (Cover by C(MP3_160K).mp3
 /home/thorin/Music/SnapTube Audio/Steven Universe - It_s Over_ Isn_t It_ - Male Cove(MP3_160K).mp3
 /home/thorin/Music/SnapTube Audio/Steven Universe - What_s the Use of Feeling Blue ((MP3_160K).mp3
+/home/thorin/Music/4-26 Stardust Speedway (Cash Cash vs. Jun Senoue Remix).mp3
 /home/thorin/Music/CASIOPEA - タイム・リミット.mp3
 /home/thorin/Music/CASIOPEA - ティアーズ・オブ・ザ・スター.mp3
 /home/thorin/Music/CASIOPEA - スペース・ロード.mp3
@@ -235,6 +260,7 @@
 /home/thorin/Music/Clouds, Gogo Melone - When I'm Gone.mp3
 /home/thorin/Music/Criolo - Subirusdoistiozin.mp3
 /home/thorin/Music/SnapTube Audio/crumb - locket (slowed   reverb)(MP3_320K).mp3
+/home/thorin/Music/4-01 Sonic Boom (Crush 40 vs. Cash Cash Remix).mp3
 /home/thorin/Music/SnapTube Audio/Lover Is a Day(MP3_128K).mp3
 /home/thorin/Music/SnapTube Audio/Cuco - Best Friend (Official Audio)(MP3_160K).mp3
 /home/thorin/Music/SnapTube Audio/CUCO - Cupid_s Quiver (Audio)(MP3_160K).mp3
@@ -361,6 +387,7 @@
 /home/thorin/Music/Hallatar - Severed Eyes.mp3
 /home/thorin/Music/Hallatar - Dreams Burn Down.mp3
 /home/thorin/Music/Her's - Speed Racer.mp3
+/home/thorin/Music/2-17 Brand-new World (Sonic ~ You Can Do Anything Remix).mp3
 /home/thorin/Music/Hot Flash Heat Wave - Hesitation.mp3
 /home/thorin/Music/Housecall - Mystery Girl.mp3
 /home/thorin/Music/Hungria - Astronauta.mp3
@@ -378,6 +405,18 @@
 /home/thorin/Music/Impaled Nazarene - Recreate Thru Hate.mp3
 /home/thorin/Music/Impaled Nazarene - Goat Seeds Of Doom.mp3
 /home/thorin/Music/Insomnium - One For Sorrow.mp3
+/home/thorin/Music/08 Start Fanfare.mp3
+/home/thorin/Music/09 End Fanfare.mp3
+/home/thorin/Music/10 Options Screen.mp3
+/home/thorin/Music/11 Can You Feel The Sunshine (Instrumental).mp3
+/home/thorin/Music/12 Living In The City (Instrumental).mp3
+/home/thorin/Music/13 Back In Time (Instrumental).mp3
+/home/thorin/Music/14 Work It Out (Instrumental).mp3
+/home/thorin/Music/15 Diamond In The Sky (Instrumental).mp3
+/home/thorin/Music/16 Super Sonic Racing (Instrumental).mp3
+/home/thorin/Music/18 Race Result 1.mp3
+/home/thorin/Music/19 Race Result 2 (With Chaos Emerald Gotten).mp3
+/home/thorin/Music/20 Race Result 3.mp3
 /home/thorin/Music/SnapTube Audio/Snoop Dogg - Gin And Juice feat. Dat Nigga Daz(MP3_160K).mp3
 /home/thorin/Music/Jack Hisatomi - Slowly Dying.mp3
 /home/thorin/Music/Joey Valence & Brae - Crank It Up.mp3
@@ -402,6 +441,9 @@
 /home/thorin/Music/Kanye West, Dwele - Flashing Lights.mp3
 /home/thorin/Music/Kanye West - I Thought About Killing You.mp3
 /home/thorin/Music/SnapTube Audio/Mantra by Kaz Moon (lyrics)(MP3_320K).mp3
+/home/thorin/Music/1-02 Sonic ~ You Can Do Anything.mp3
+/home/thorin/Music/2-15 Cosmic Eternity ~ Believe in Yourself.mp3
+/home/thorin/Music/4-27 Cosmic Eternity ~ Believe In Yourself (Extended Mix).mp3
 /home/thorin/Music/Kendrick Lamar - Backseat Freestyle.mp3
 /home/thorin/Music/Kendrick Lamar, MC Eiht - m.A.A.d city.mp3
 /home/thorin/Music/Kendrick Lamar - Alright.mp3
@@ -415,14 +457,27 @@
 /home/thorin/Music/SnapTube Audio/Epica - Replica (Fear Factory cover) (Lyrics)(MP3_160K).mp3
 /home/thorin/Music/Lake Of Tears - House of the Setting Sun.mp3
 /home/thorin/Music/SnapTube Audio/N.W.A.- Straight Outta Compton (Tradução_Legendado(MP3_160K).mp3
+/home/thorin/Music/01 - O Novo Pagão.mp3
 /home/thorin/Music/Life is a Lie - O Novo Pagão.mp3
+/home/thorin/Music/02 - Glória e Guerra.mp3
 /home/thorin/Music/Life is a Lie - Glória e Guerra.mp3
+/home/thorin/Music/03 - Pâmela.mp3
 /home/thorin/Music/Life is a Lie - Pâmela.mp3
+/home/thorin/Music/04 - Ossimorpmoc Moc Sanatas.mp3
 /home/thorin/Music/Life is a Lie - Ossimorpmoc Moc Sanatas.mp3
+/home/thorin/Music/05 - Gasolina (Kusta Pässää).mp3
+/home/thorin/Music/06 - Estrela.mp3
 /home/thorin/Music/Life is a Lie - Estrela.mp3
+/home/thorin/Music/07 - 6 Horas no Inferno.mp3
 /home/thorin/Music/Life is a Lie - 6 Horas no Inferno.mp3
+/home/thorin/Music/08 - Doença.mp3
 /home/thorin/Music/Life is a Lie - Doença.mp3
+/home/thorin/Music/09 - A Dança.mp3
+/home/thorin/Music/10 - We're Satan's Generation.mp3
 /home/thorin/Music/Life is a Lie - We're Satan's Generation.mp3
+/home/thorin/Music/11 - Festa Num Carro em Alta Velocidade.mp3
+/home/thorin/Music/12 - Pensamentos de um Assassino Serial, Comendo.mp3
+/home/thorin/Music/13 - Déjà Vu.mp3
 /home/thorin/Music/Life is a Lie - O Tempo Destrói Tudo.mp3
 /home/thorin/Music/Life is a Lie - Gardenal 200Mg.mp3
 /home/thorin/Music/Life is a Lie - Ordem Bestial.mp3
@@ -436,8 +491,48 @@
 /home/thorin/Music/SnapTube Audio/midnight city. [lofi   jazz hop   chill mix].mp3
 /home/thorin/Music/Marduk - Wolves.mp3
 /home/thorin/Music/Marduk - The Blond Beast.mp3
+/home/thorin/Music/3-08 Robotnik.mp3
+/home/thorin/Music/3-10 Collision Chaos US.mp3
+/home/thorin/Music/3-11 Collision Chaos US (Album Ver.).mp3
+/home/thorin/Music/3-12 Collision Chaos 'G' Mix US.mp3
+/home/thorin/Music/3-13 Collision Chaos 'B' Mix US.mp3
+/home/thorin/Music/4-13 Metallic Madness US.mp3
+/home/thorin/Music/4-14 Metallic Madness 'G' Mix US.mp3
+/home/thorin/Music/4-15 Metallic Madness 'B' Mix US.mp3
+/home/thorin/Music/4-16 Metallic Madness 'B' Mix US (Album Ver.).mp3
+/home/thorin/Music/1-03 Main Title - Sonic ~ You Can Do Anything.mp3
+/home/thorin/Music/1-10 Collision Chaos JP.mp3
+/home/thorin/Music/1-11 Collision Chaos 'P' Mix.mp3
+/home/thorin/Music/1-12 Collision Chaos 'G' Mix JP.mp3
+/home/thorin/Music/1-13 Collision Chaos 'B' Mix JP.mp3
+/home/thorin/Music/1-14 Tidal Tempest JP.mp3
+/home/thorin/Music/1-15 Tidal Tempest 'P' Mix.mp3
+/home/thorin/Music/1-16 Tidal Tempest 'G' Mix JP.mp3
+/home/thorin/Music/1-17 Tidal Tempest 'B' Mix JP.mp3
+/home/thorin/Music/1-22 Wacky Workbench JP.mp3
+/home/thorin/Music/1-23 Wacky Workbench 'P' Mix.mp3
+/home/thorin/Music/1-24 Wacky Workbench 'G' Mix JP.mp3
+/home/thorin/Music/1-25 Wacky Workbench 'B' Mix JP.mp3
+/home/thorin/Music/1-26 Little Planet.mp3
+/home/thorin/Music/1-27 Time Attack (2011 Ver.).mp3
+/home/thorin/Music/1-28 Sonic ~ You Can Do Anything (Instrumental Ver.).mp3
+/home/thorin/Music/2-11 Speed Up!!! JP.mp3
+/home/thorin/Music/2-12 Invincible!!! JP.mp3
+/home/thorin/Music/2-13 Game Over JP.mp3
+/home/thorin/Music/2-14 Special Stage JP.mp3
+/home/thorin/Music/2-18 Sonic Stream (Collision Chaos JP Remix).mp3
+/home/thorin/Music/2-20 Techno power mix (Wacky Workbench JP Remix).mp3
+/home/thorin/Music/2-22 #8th SPACE (Special Stage JP Arrange).mp3
+/home/thorin/Music/1-01 Sega.mp3
 /home/thorin/Music/SnapTube Audio/Rage Against The Machine_ Bulls On Parade(MP3_160K).mp3
 /home/thorin/Music/Matchbook Romance - Monsters.mp3
+/home/thorin/Music/01 Silvester Anfang.mp3
+/home/thorin/Music/02 Deathcrush.mp3
+/home/thorin/Music/03 Chainsaw Gutsfuck.mp3
+/home/thorin/Music/04 Witching Hour (Venom cover).mp3
+/home/thorin/Music/05 Necrolust.mp3
+/home/thorin/Music/06 (Weird) Manheim.mp3
+/home/thorin/Music/07 Pure Fucking Armageddon.mp3
 /home/thorin/Music/Mayhem - Silvester Anfang.mp3
 /home/thorin/Music/Mayhem - Chainsaw Gutsfuck.mp3
 /home/thorin/Music/Mayhem - Witching Hour.mp3
@@ -523,6 +618,34 @@
 /home/thorin/Music/SnapTube Audio/A Japonesa (Acústico)(MP3_320K).mp3
 /home/thorin/Music/SnapTube Audio/Chá de Hibisco (Acústico)(MP3_320K).mp3
 /home/thorin/Music/SnapTube Audio/Otaku Raiz (Acústico)(MP3_320K).mp3
+/home/thorin/Music/1-04 Palmtree Panic JP.mp3
+/home/thorin/Music/1-06 Palmtree Panic 'P' Mix.mp3
+/home/thorin/Music/1-07 Palmtree Panic 'G' Mix JP.mp3
+/home/thorin/Music/1-08 Palmtree Panic 'B' Mix JP.mp3
+/home/thorin/Music/1-09 Boss!!!.mp3
+/home/thorin/Music/1-18 Quartz Quadrant JP.mp3
+/home/thorin/Music/1-19 Quartz Quadrant 'P' Mix.mp3
+/home/thorin/Music/1-20 Quartz Quadrant 'G' Mix JP.mp3
+/home/thorin/Music/1-21 Quartz Quadrant 'B' Mix JP.mp3
+/home/thorin/Music/2-01 Stardust Speedway JP.mp3
+/home/thorin/Music/2-02 Stardust Speedway 'P' Mix.mp3
+/home/thorin/Music/2-03 Stardust Speedway 'G' Mix JP.mp3
+/home/thorin/Music/2-04 Stardust Speedway 'B' Mix JP.mp3
+/home/thorin/Music/2-05 Metallic Madness JP.mp3
+/home/thorin/Music/2-06 Metallic Madness 'P' Mix.mp3
+/home/thorin/Music/2-07 Metallic Madness 'G' Mix JP.mp3
+/home/thorin/Music/2-08 Metallic Madness 'B' Mix JP.mp3
+/home/thorin/Music/2-09 Final Fever.mp3
+/home/thorin/Music/2-10 Zone Clear JP.mp3
+/home/thorin/Music/2-19 Miracle Blue ~ Little Planet (Quartz Quadrant JP Remix).mp3
+/home/thorin/Music/2-21 Dr. 'Gigglymen' (Stardust Speedway JP Remix).mp3
+/home/thorin/Music/2-24 Cosmic Eternity ~ Believe in Yourself (Instrumental Ver.).mp3
+/home/thorin/Music/1.A Praga.mp3
+/home/thorin/Music/2.Necro Maníaco.mp3
+/home/thorin/Music/3.Comido Por Vermes.mp3
+/home/thorin/Music/4.Pandemia Apocalíptica.mp3
+/home/thorin/Music/5.Aborto Negro.mp3
+/home/thorin/Music/6.Meu Desejo é Morrer.mp3
 /home/thorin/Music/SnapTube Audio/ｎｉｎｔｅｎｄｏ　ａｎｄ　ｌｏｆｉ(MP3_160K).mp3
 /home/thorin/Music/SnapTube Audio/ｎｉｎｔｅｎｄｏ　ａｎｄ　ｌｏｆｉ　ＩＩ(MP3_160K).mp3
 /home/thorin/Music/SnapTube Audio/ｎｉｎｔｅｎｄｏ　ａｎｄ　ｌｏｆｉ　ＩＩＩ(MP3_160K).mp3
@@ -573,6 +696,9 @@
 /home/thorin/Music/Opeth - The Grand Conjuration.mp3
 /home/thorin/Music/Opeth - Isolation Years.mp3
 /home/thorin/Music/Pain of Salvation - Undertow.mp3
+/home/thorin/Music/3-01 Sonic Boom ~ Opening.mp3
+/home/thorin/Music/3-24 Sonic Boom (Album Ver.).mp3
+/home/thorin/Music/4-23 Sonic Boom ~ Ending.mp3
 /home/thorin/Music/Phoneboy, Justin Magnaye - Nevermind (feat. Justin Magnaye).mp3
 /home/thorin/Music/Playboi Carti - ILoveUIHateU.mp3
 /home/thorin/Music/SnapTube Audio/Talk Dirty To Me (1996 - Remaster)(MP3_160K).mp3
@@ -597,12 +723,49 @@
 /home/thorin/Music/SnapTube Audio/Rex Orange County - Television_So Far So Good (leg(MP3_160K).mp3
 /home/thorin/Music/SnapTube Audio/Rex Orange County - UNO(MP3_160K).mp3
 /home/thorin/Music/SnapTube Audio/Fly me to the moon - Ending Evangelion (Versión co(MP3_160K).mp3
+/home/thorin/Music/1-05 Time Warp.mp3
+/home/thorin/Music/3-04 Time Warp (Unused).mp3
+/home/thorin/Music/3-09 Achievement.mp3
+/home/thorin/Music/4-18 Event.mp3
+/home/thorin/Music/4-24 You're So Cool!!!.mp3
 /home/thorin/Music/SnapTube Audio/Saint Seiya Omega - Opening HD(MP3_160K).mp3
 /home/thorin/Music/Síntese - Brasil Tropical.mp3
 /home/thorin/Music/SnapTube Audio/N.W.A - Appetite 4 destruction(MP3_160K).mp3
 /home/thorin/Music/SnapTube Audio/Snoop Dogg- Still Here (Official Audio)(MP3_160K).mp3
 /home/thorin/Music/SnapTube Audio/Something About Plastic Love - Daft Punk_Maria Tak(MP3_160K).mp3
 /home/thorin/Music/Sonic Youth - Kool Thing.mp3
+/home/thorin/Music/3-02 Palmtree Panic US.mp3
+/home/thorin/Music/3-03 Palmtree Panic US (Album Ver.).mp3
+/home/thorin/Music/3-05 Palmtree Panic 'G' Mix US.mp3
+/home/thorin/Music/3-06 Palmtree Panic 'G' Mix US (Album Ver.).mp3
+/home/thorin/Music/3-07 Palmtree Panic 'B' Mix US.mp3
+/home/thorin/Music/3-14 Tidal Tempest US.mp3
+/home/thorin/Music/3-15 Tidal Tempest US (Album Ver.).mp3
+/home/thorin/Music/3-16 Tidal Tempest 'G' Mix US.mp3
+/home/thorin/Music/3-17 Tidal Tempest 'B' Mix US.mp3
+/home/thorin/Music/3-18 Tidal Tempest 'B' Mix US (Album Ver.).mp3
+/home/thorin/Music/3-19 Quartz Quadrant US.mp3
+/home/thorin/Music/3-20 Quartz Quadrant US (Album Ver.).mp3
+/home/thorin/Music/3-21 Quartz Quadrant 'G' Mix US.mp3
+/home/thorin/Music/3-22 Quartz Quadrant 'G' Mix US (Album Ver.).mp3
+/home/thorin/Music/3-23 Quartz Quadrant 'B' Mix US.mp3
+/home/thorin/Music/4-02 Wacky Workbench US.mp3
+/home/thorin/Music/4-03 Wacky Workbench US (Album Ver.).mp3
+/home/thorin/Music/4-04 Wacky Workbench 'G' Mix US.mp3
+/home/thorin/Music/4-05 Wacky Workbench 'G' Mix US (Album Ver.).mp3
+/home/thorin/Music/4-06 Wacky Workbench 'B' Mix US.mp3
+/home/thorin/Music/4-07 Wacky Workbench 'B' Mix US (Album Ver.).mp3
+/home/thorin/Music/4-08 Stardust Speedway US.mp3
+/home/thorin/Music/4-09 Stardust Speedway US (Album Ver.).mp3
+/home/thorin/Music/4-10 Stardust Speedway 'G' Mix US.mp3
+/home/thorin/Music/4-11 Stardust Speedway 'G' Mix US (Album Ver.).mp3
+/home/thorin/Music/4-12 Stardust Speedway 'B' Mix US.mp3
+/home/thorin/Music/4-17 Zone Clear US.mp3
+/home/thorin/Music/4-19 Speed Up!!! US.mp3
+/home/thorin/Music/4-20 Invincible!!! US.mp3
+/home/thorin/Music/4-21 Game Over US.mp3
+/home/thorin/Music/4-22 Special Stage US.mp3
+/home/thorin/Music/4-25 Sonic Boom ~ Ending (Instrumental Ver.).mp3
 /home/thorin/Music/SnapTube Audio/Infrunami(MP3_320K).mp3
 /home/thorin/Music/SnapTube Audio/Be Wherever You Are(MP3_160K).mp3
 /home/thorin/Music/SnapTube Audio/Giant Woman(MP3_160K).mp3
@@ -613,6 +776,8 @@
 /home/thorin/Music/SnapTube Audio/Peace and Love on the Planet Earth(MP3_160K).mp3
 /home/thorin/Music/SnapTube Audio/What_s the Use of Feeling (Blue) _(MP3_160K).mp3
 /home/thorin/Music/Stuck in the Sound - Let’s Go.mp3
+/home/thorin/Music/2-16 Love You 'Sonic'.mp3
+/home/thorin/Music/2-23 When we reach for you ~ Could it be right (Cosmic Eternity ~ Believe in Yourself Remix).mp3
 /home/thorin/Music/SnapTube Audio/Eazy E - No More Question_s(MP3_160K).mp3
 /home/thorin/Music/SnapTube Audio/Mining Melancholy Restored to HD(MP3_160K).mp3
 /home/thorin/Music/The Clean Tramps - Warm Bodies.mp3
@@ -635,6 +800,14 @@
 /home/thorin/Music/The Sukis - Cherryade.mp3
 /home/thorin/Music/SnapTube Audio/Tactics (Remastered)(MP3_160K).mp3
 /home/thorin/Music/Thurisaz - Years of Silence.mp3
+/home/thorin/Music/01 Can You Feel The Sunshine.mp3
+/home/thorin/Music/02 Living In The City.mp3
+/home/thorin/Music/03 Back In Time.mp3
+/home/thorin/Music/04 Work It Out.mp3
+/home/thorin/Music/05 Diamond In The Sky.mp3
+/home/thorin/Music/06 Super Sonic Racing.mp3
+/home/thorin/Music/07 Number One (Play in Credits).mp3
+/home/thorin/Music/17 Super Sonic Racing (Shortened Mix).mp3
 /home/thorin/Music/SnapTube Audio/T.M.Revolution - HEART OF SWORD -Yoakemae-(MP3_160K).mp3
 /home/thorin/Music/Tommy Richman - MILLION DOLLAR BABY.mp3
 /home/thorin/Music/Tomtsu - Tongue Tied.mp3

@@ -1,12 +1,14 @@
 add Music/
 clear
+fset 90s=date>=1990&date<2000
+add
+add ~/Music/
+help
 refresh 
 q
 r
 live-filter 
 q1
 reshuffle
-help
 refresh
 refresh *
-add ~/Music/

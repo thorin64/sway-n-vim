@@ -44,9 +44,9 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.o.termguicolors = true
 -- matrix theme config
-vim.g.matrix_disable_background = true
-vim.g.matrix_italic = false
-
+-- vim.g.matrix_disable_background = true
+-- vim.g.matrix_italic = false
+-- vim.g.moonflyTransparent = true
 --Terminal Escape
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
 
@@ -93,17 +93,17 @@ require('lazy').setup({
       'williamboman/mason-lspconfig.nvim',
       -- Useful status updates for LSP
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-      { 'j-hui/fidget.nvim', opts = {} },
+      { 'j-hui/fidget.nvim',       opts = {} },
 
       -- Additional lua configuration, makes nvim stuff amazing!
       'folke/neodev.nvim',
     },
   },
 
--- Autorun plugin
-{
+  -- Autorun plugin
+  {
     'audunhov/autorun.nvim', opts = {}
-},
+  },
 
   {
     -- Autocompletion
@@ -132,23 +132,23 @@ require('lazy').setup({
       'rafamadriz/friendly-snippets',
     },
   },
--- mini icons snippet
+  -- mini icons snippet
   { 'echasnovski/mini.nvim', version = false },
 
--- NeoGit 
-{
-  "NeogitOrg/neogit",
-  dependencies = {
-    "nvim-lua/plenary.nvim",         -- required
-    "sindrets/diffview.nvim",        -- optional - Diff integration
+  -- NeoGit
+  {
+    "NeogitOrg/neogit",
+    dependencies = {
+      "nvim-lua/plenary.nvim",  -- required
+      "sindrets/diffview.nvim", -- optional - Diff integration
 
-    -- Only one of these is needed, not both.
-    "nvim-telescope/telescope.nvim", -- optional
-    "ibhagwan/fzf-lua",              -- optional
+      -- Only one of these is needed, not both.
+      "nvim-telescope/telescope.nvim", -- optional
+      "ibhagwan/fzf-lua",              -- optional
+    },
+    config = true
   },
-  config = true
-},
-{
+  {
     "jay-babu/mason-null-ls.nvim",
     event = { "BufReadPre", "BufNewFile" },
     dependencies = {
@@ -158,36 +158,88 @@ require('lazy').setup({
     config = function()
       require("mason").setup()
       require("mason-null-ls").setup({
-    ensure_installed = {
+        ensure_installed = {
 
-        -- Opt to list sources here, when available in mason.
-    },
-    automatic_installation = false,
-    handlers = {},
-})
-require("null-ls").setup({
-    sources = {
+          -- Opt to list sources here, when available in mason.
+        },
+        automatic_installation = false,
+        handlers = {},
+      })
+      require("null-ls").setup({
+        sources = {
 
-        -- Anything not supported by mason.
-    }
-})
+          -- Anything not supported by mason.
+        }
+      })
     end,
-},
+  },
   --null ls for linting
   {
-  "nvimtools/none-ls.nvim",
-  opts = {},
+    "nvimtools/none-ls.nvim",
+    opts = {},
   },
-    --colorizer
+  --colorizer
   {
     "norcalli/nvim-colorizer.lua"
   },
+  -- formatter conform
+  {
+    "stevearc/conform.nvim",
+    event = { "BufWritePre" },
+    cmd = { "ConformInfo" },
+    keys = {
+      {
+        -- Customize or remove this keymap to your liking
+        "<leader>f",
+        function()
+          require("conform").format({ async = true })
+        end,
+        mode = "",
+        desc = "Format buffer",
+      },
+    },
+    -- This will provide type hinting with LuaLS
+    ---@module "conform"
+    ---@type conform.setupOpts
+    opts = {
+      -- Define your formatters
+      formatters_by_ft = {
+        lua = { "stylua" },
+        python = { "isort", "black" },
+        javascript = { "prettierd", "prettier", stop_after_first = true },
+        html = { "prettierd", "prettier" },
+        css = { "prettierd", "prettier" },
+        typescript = { "prettierd", "prettier" },
+        vue = { "prettierd", "prettier" },
+        angular = { "prettierd", "prettier" },
+        scss = { "prettierd", "prettier" },
+        conf = { "beautysh" },
+        sh = { "beautysh" },
+      },
+      -- Set default options
+      default_format_opts = {
+        lsp_format = "fallback",
+      },
+      -- Set up format-on-save
+      format_on_save = { timeout_ms = 500 },
+      -- Customize formatters
+      formatters = {
+        shfmt = {
+          prepend_args = { "-i", "2" },
+        },
+      },
+    },
+    init = function()
+      -- If you want the formatexpr, here is the place to set it
+      vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
+    end,
+  },
   -- terminal
   {
-  "akinsho/toggleterm.nvim",
-  version = "*",
-  opts = {}, -- for default options, refer to the configuration section for custom setup.
-  keys = {
+    "akinsho/toggleterm.nvim",
+    version = "*",
+    opts = {}, -- for default options, refer to the configuration section for custom setup.
+    keys = {
       {
         "<leader>tt",
         "<cmd>ToggleTerm<cr>",
@@ -197,61 +249,61 @@ require("null-ls").setup({
   },
   -- folke trouble just search for it!
   {
-  "folke/trouble.nvim",
-  opts = {}, -- for default options, refer to the configuration section for custom setup.
-  cmd = "Trouble",
-  keys = {
-    {
-      "<leader>xx",
-      "<cmd>Trouble diagnostics toggle<cr>",
-      desc = "Diagnostics (Trouble)",
-    },
-    {
-      "<leader>xX",
-      "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
-      desc = "Buffer Diagnostics (Trouble)",
-    },
-    {
-      "<leader>cs",
-      "<cmd>Trouble symbols toggle focus=false<cr>",
-      desc = "Symbols (Trouble)",
-    },
-    {
-      "<leader>cl",
-      "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
-      desc = "LSP Definitions / references / ... (Trouble)",
-    },
-    {
-      "<leader>xL",
-      "<cmd>Trouble loclist toggle<cr>",
-      desc = "Location List (Trouble)",
-    },
-    {
-      "<leader>xQ",
-      "<cmd>Trouble qflist toggle<cr>",
-      desc = "Quickfix List (Trouble)",
+    "folke/trouble.nvim",
+    opts = {}, -- for default options, refer to the configuration section for custom setup.
+    cmd = "Trouble",
+    keys = {
+      {
+        "<leader>xx",
+        "<cmd>Trouble diagnostics toggle<cr>",
+        desc = "Diagnostics (Trouble)",
+      },
+      {
+        "<leader>xX",
+        "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
+        desc = "Buffer Diagnostics (Trouble)",
+      },
+      {
+        "<leader>cs",
+        "<cmd>Trouble symbols toggle focus=false<cr>",
+        desc = "Symbols (Trouble)",
+      },
+      {
+        "<leader>cl",
+        "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+        desc = "LSP Definitions / references / ... (Trouble)",
+      },
+      {
+        "<leader>xL",
+        "<cmd>Trouble loclist toggle<cr>",
+        desc = "Location List (Trouble)",
+      },
+      {
+        "<leader>xQ",
+        "<cmd>Trouble qflist toggle<cr>",
+        desc = "Quickfix List (Trouble)",
+      },
     },
   },
-},
   -- Useful plugin to show you pending keybinds.
-{
-  "folke/which-key.nvim",
-  event = "VeryLazy",
-  opts = {
-    -- your configuration comes here
-    -- or leave it empty to use the default settings
-    -- refer to the configuration section below
-  },
-  keys = {
-    {
-      "<leader>?",
-      function()
-        require("which-key").show({ global = false })
-      end,
-      desc = "Buffer Local Keymaps (which-key)",
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
+    keys = {
+      {
+        "<leader>?",
+        function()
+          require("which-key").show({ global = false })
+        end,
+        desc = "Buffer Local Keymaps (which-key)",
+      },
     },
   },
-},
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -326,36 +378,44 @@ require("null-ls").setup({
       end,
     },
   },
+  -- {
+  --   'iruzo/matrix-nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = function()
+  --     -- load the colorscheme here
+  --    vim.cmd([[colorscheme matrix]])
+  --   end,
+  -- },
+  -- {
+  --   'bluz71/vim-moonfly-colors',
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = function()
+  --     -- load the colorscheme here
+  --     vim.cmd([[colorscheme moonfly]])
+  --   end,
+  -- },
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   lazy = false,      -- make sure we load this during startup if it is your main colorscheme
+  --   priority = 1000,   -- make sure to load this before all the other start plugins
+  --   config = function()
+  --     vim.cmd([[colorscheme tokyonight-night]])
+  --   end,
+  -- },
   {
-    'iruzo/matrix-nvim',
+    -- Theme inspired by Atom
+    'navarasu/onedark.nvim',
+    -- priority = 1000,
     lazy = false,
-    priority = 1000,
     config = function()
-      -- load the colorscheme here
-     vim.cmd([[colorscheme matrix]])
+      require('onedark').setup {
+        -- Set a style preset. 'dark' is default.
+        style = 'darker', -- dark, darker, cool, deep, warm, warmer, light
+      }
+      require('onedark').load()
     end,
-  },
--- {
---     "folke/tokyonight.nvim",
---     lazy = false, -- make sure we load this during startup if it is your main colorscheme
---     priority = 1000, -- make sure to load this before all the other start plugins
---     config = function()
---      load the colorscheme here
---      vim.cmd([[colorscheme tokyonight-night]])
---     end,
---   },
-  {
-    -- -- Theme inspired by Atom
-    -- 'navarasu/onedark.nvim',
-    -- -- priority = 1000,
-    -- lazy = false,
-    -- config = function()
-    --   require('onedark').setup {
-    --     -- Set a style preset. 'dark' is default.
-    --     style = 'dark', -- dark, darker, cool, deep, warm, warmer, light
-    --   }
-    --   require('onedark').load()
-    -- end,
   },
 
   {
@@ -409,17 +469,17 @@ require("null-ls").setup({
     -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
     opts = {
-  servers = {
-    volar = {
-      init_options = {
-        vue = {
-          hybridMode = true,
+      servers = {
+        volar = {
+          init_options = {
+            vue = {
+              hybridMode = true,
+            },
+          },
         },
+        vtsls = {},
       },
     },
-    vtsls = {},
-  },
-},
     dependencies = {
       'nvim-treesitter/nvim-treesitter-textobjects',
     },
@@ -439,7 +499,7 @@ require("null-ls").setup({
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
   { import = 'custom.plugins' },
-  }, {})
+}, {})
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
@@ -712,28 +772,28 @@ end
 
 -- document existing key chains
 require('which-key').add {
-    { "<leader>c", group = "[C]ode" },
-    { "<leader>c_", hidden = true },
-    { "<leader>d", group = "[D]ocument" },
-    { "<leader>d_", hidden = true },
-    { "<leader>g", group = "[G]it" },
-    { "<leader>g_", hidden = true },
-    { "<leader>h", group = "Git [H]unk" },
-    { "<leader>h_", hidden = true },
-    { "<leader>r", group = "[R]ename" },
-    { "<leader>r_", hidden = true },
-    { "<leader>s", group = "[S]earch" },
-    { "<leader>s_", hidden = true },
-    { "<leader>t", group = "[T]oggle" },
-    { "<leader>t_", hidden = true },
-    { "<leader>w", group = "[W]orkspace" },
-    { "<leader>w_", hidden = true },
+  { "<leader>c",  group = "[C]ode" },
+  { "<leader>c_", hidden = true },
+  { "<leader>d",  group = "[D]ocument" },
+  { "<leader>d_", hidden = true },
+  { "<leader>g",  group = "[G]it" },
+  { "<leader>g_", hidden = true },
+  { "<leader>h",  group = "Git [H]unk" },
+  { "<leader>h_", hidden = true },
+  { "<leader>r",  group = "[R]ename" },
+  { "<leader>r_", hidden = true },
+  { "<leader>s",  group = "[S]earch" },
+  { "<leader>s_", hidden = true },
+  { "<leader>t",  group = "[T]oggle" },
+  { "<leader>t_", hidden = true },
+  { "<leader>w",  group = "[W]orkspace" },
+  { "<leader>w_", hidden = true },
 }
 -- register which-key VISUAL mode
 -- required for visual <leader>hs (hunk stage) to work
 require('which-key').add {
-  { "<leader>", group = "VISUAL <leader>", mode = "v" },
-  { "<leader>h", desc = "Git [H]unk", mode = 'v' },
+  { "<leader>",  group = "VISUAL <leader>", mode = "v" },
+  { "<leader>h", desc = "Git [H]unk",       mode = 'v' },
 }
 
 -- mason-lspconfig requires that these setup functions are called in this order
@@ -741,7 +801,7 @@ require('which-key').add {
 require('mason').setup()
 require('mason-lspconfig').setup()
 require('colorizer').setup()
-require('toggleterm').setup{
+require('toggleterm').setup {
   size = 10,
   direction = 'horizontal',
   float_opts = {
@@ -769,19 +829,20 @@ vim.cmd([[set termguicolors]])
 --  If you want to override the default filetypes that your language server will attach to you can
 --  define the property 'filetypes' to the map in question.
 local servers = {
---  ast_grep = {},
+  --  ast_grep = {},
   clangd = {},
   gopls = {},
   -- pyright = {},
   rust_analyzer = {},
-  html = {filetypes = {'html', 'twig', 'hbs'}},
+  html = { filetypes = { 'html', 'twig', 'hbs' } },
   pylsp = {},
   cobol_ls = {},
---  vuels = {filetypes = {'html'}},
+  --  vuels = {filetypes = {'html'}},
   volar = {},
+  angularls = {},
   cssls = {},
---  css_variables = {},
---  cssmodules_ls = {},
+  --  css_variables = {},
+  --  cssmodules_ls = {},
   sqlls = {},
   vimls = {},
   bashls = {},
