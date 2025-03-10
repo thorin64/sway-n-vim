@@ -3,7 +3,7 @@
 SETUVAR --export SSH_AGENT_PID:3037
 SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXX8xdZKZ/agent\x2e3036
 SETUVAR SSH_KEYS_TO_AUTOLOAD:\x2essh/necropad
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3800
 SETUVAR fish_color_autosuggestion:777777
 SETUVAR fish_color_cancel:\x2d\x2dreverse
 SETUVAR fish_color_command:5f87ff

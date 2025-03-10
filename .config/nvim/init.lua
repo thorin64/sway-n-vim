@@ -49,6 +49,13 @@ vim.o.termguicolors = true
 -- vim.g.moonflyTransparent = true
 --Terminal Escape
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
+vim.keymap.set('n', '<leader>rr', ':RunCode<CR>', { noremap = true, silent = false })
+vim.keymap.set('n', '<leader>rf', ':RunFile<CR>', { noremap = true, silent = false })
+vim.keymap.set('n', '<leader>rft', ':RunFile tab<CR>', { noremap = true, silent = false })
+vim.keymap.set('n', '<leader>rp', ':RunProject<CR>', { noremap = true, silent = false })
+vim.keymap.set('n', '<leader>rc', ':RunClose<CR>', { noremap = true, silent = false })
+vim.keymap.set('n', '<leader>crf', ':CRFiletype<CR>', { noremap = true, silent = false })
+vim.keymap.set('n', '<leader>crp', ':CRProjects<CR>', { noremap = true, silent = false })
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    https://github.com/folke/lazy.nvim
@@ -133,7 +140,7 @@ require('lazy').setup({
     },
   },
   -- mini icons snippet
-  { 'echasnovski/mini.nvim', version = false },
+  { 'echasnovski/mini.nvim',    version = false },
 
   -- NeoGit
   {
@@ -178,6 +185,26 @@ require('lazy').setup({
     "nvimtools/none-ls.nvim",
     opts = {},
   },
+  {
+    "kdheepak/lazygit.nvim",
+    lazy = true,
+    cmd = {
+      "LazyGit",
+      "LazyGitConfig",
+      "LazyGitCurrentFile",
+      "LazyGitFilter",
+      "LazyGitFilterCurrentFile",
+    },
+    -- optional for floating window border decoration
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    -- setting the keybinding for LazyGit with 'keys' is recommended in
+    -- order to load the plugin when the command is run for the first time
+    keys = {
+      { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
+    }
+  },
   --colorizer
   {
     "norcalli/nvim-colorizer.lua"
@@ -206,12 +233,14 @@ require('lazy').setup({
       formatters_by_ft = {
         lua = { "stylua" },
         python = { "isort", "black" },
-        javascript = { "prettierd", "prettier", stop_after_first = true },
+        javascript = { "prettierd", "prettier" },
         html = { "prettierd", "prettier" },
         css = { "prettierd", "prettier" },
         typescript = { "prettierd", "prettier" },
+        typescriptreact = { "prettierd", "prettier" },
         vue = { "prettierd", "prettier" },
         angular = { "prettierd", "prettier" },
+        react = { "prettierd", "prettier" },
         scss = { "prettierd", "prettier" },
         conf = { "beautysh" },
         sh = { "beautysh" },
@@ -234,6 +263,7 @@ require('lazy').setup({
       vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
     end,
   },
+  { "CRAG666/code_runner.nvim", config = true },
   -- terminal
   {
     "akinsho/toggleterm.nvim",
@@ -442,7 +472,7 @@ require('lazy').setup({
   },
 
   -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim', opts = {} },
+  { 'numToStr/Comment.nvim',  opts = {} },
 
   -- Fuzzy Finder (files, lsp, etc)
   {
@@ -801,6 +831,39 @@ require('which-key').add {
 require('mason').setup()
 require('mason-lspconfig').setup()
 require('colorizer').setup()
+require('code_runner').setup({
+  filetype = {
+    java = {
+      "cd $dir &&",
+      "javac $fileName &&",
+      "java $fileNameWithoutExt"
+    },
+    python = "python3 -u",
+    typescript = "deno run",
+    javascript = "node $filename",
+    rust = {
+      "cd $dir &&",
+      "rustc $fileName &&",
+      "$dir/$fileNameWithoutExt"
+    },
+    c = function(...)
+      c_base = {
+        "cd $dir &&",
+        "gcc $fileName -o",
+        "/tmp/$fileNameWithoutExt",
+      }
+      local c_exec = {
+        "&& /tmp/$fileNameWithoutExt &&",
+        "rm /tmp/$fileNameWithoutExt",
+      }
+      vim.ui.input({ prompt = "Add more args:" }, function(input)
+        c_base[4] = input
+        vim.print(vim.tbl_extend("force", c_base, c_exec))
+        require("code_runner.commands").run_from_fn(vim.list_extend(c_base, c_exec))
+      end)
+    end,
+  },
+})
 require('toggleterm').setup {
   size = 10,
   direction = 'horizontal',
@@ -829,12 +892,11 @@ vim.cmd([[set termguicolors]])
 --  If you want to override the default filetypes that your language server will attach to you can
 --  define the property 'filetypes' to the map in question.
 local servers = {
-  --  ast_grep = {},
+  ast_grep = {},
   clangd = {},
   gopls = {},
   -- pyright = {},
   rust_analyzer = {},
-  html = { filetypes = { 'html', 'twig', 'hbs' } },
   pylsp = {},
   cobol_ls = {},
   --  vuels = {filetypes = {'html'}},
