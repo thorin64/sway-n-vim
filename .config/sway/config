@@ -1,5 +1,6 @@
 #Default config for sway
 #
+# exec_always foot -e "echo -n 70 > /sys/devices/platform/i8042/serio1/serio2/speed && echo -n 101 > /sys/devices/platform/i8042/serio1/serio2/sensitivity"
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
@@ -24,6 +25,7 @@ client.urgent           "#e4d00a" "#00000080"      "#00ff41"  "#e4d00a"  "#e4d00
 gaps inner 3px
 gaps outer 3px
 exec darkman set dark
+exec bluetoothctl power off
 # Logo key. Use Mod1 for Alt. | Mod4 for Super
 set $mod Mod1
 # Home row direction keys, like vim
@@ -42,26 +44,29 @@ set $menu fuzzel --show run
 #
 # exec way-displays -c ~/.config/way-displays/cfg.yaml > /tmp/way-displays.${XDG_VTNR}.${USER}.log 2>&1
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-    # output * bg ~/Pictures/guldan.jpg center
-exec swww-daemon
-exec swww img ~/Pictures/matrixAnimated.gif
+    output * bg ~/Pictures/theMatrix/systemFailure.jpg center
+# exec swww-daemon
+# exec swww img ~/Pictures/matrixAnimated.gif
 # exec mpvpaper 'HDMI-A-1' Videos/WallpapersLive/hwamd.mp4 --mpv-options "--noaudio --loop"
 
-    # output HDMI-A-2 adaptive_sync on
-     output HDMI-A-1 mode 1920x1080@100Hz
-    output HDMI-A-2 mode 1920x1080@60Hz
-#
-output HDMI-A-1 scale 1 position 0 0
-output DVI-D-1 scale 1 position 1920 0
-output HDMI-A-2 scale 1 position 3200 0
+    output HDMI-A-2 scale 1 position -1920 0 
+    output HDMI-A-2 mode 1920x1080@100Hz
+    output HDMI-A-2 adaptive_sync on
 
-bindsym $mod+Shift+p output HDMI-A-2 toggle
-exec_always output HDMI-A-2 power off
+    #  output HDMI-A-1 mode 1920x1080@100Hz
+    # output HDMI-A-2 mode 1920x1080@60Hz
+
+# output DVI-D-1 scale 1 position 1920 0
+
+# output HDMI-A-2 scale 1 position 3200 0
+
+bindsym $mod+Shift+p output LVDS-1 toggle
+# exec_always output HDMI-A-2 power off
 
 
 # Example configuration:
 #
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
+  # output HDMI-A-2 resolution 1920x1080 position -1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
@@ -90,7 +95,7 @@ exec_always sleep 1.6s && swaymsg "exec $term -e cmus; splith;"
 #           timeout 300 'swaylock -f --image ~/Pictures/matrixDark.jpg'' \
 #           timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
 #          before-sleep 'swaylock -f --image ~/Pictures/matrixDark.jpg'
-set $lock swaylock -f --image ~/Pictures/guldan.jpg
+set $lock swaylock -f --image ~/Pictures/theMatrix/systemFailure.jpg
 bindsym $mod+Shift+l exec systemctl suspend
 exec_always swayidle -w     lock 'exec $lock'     before-sleep 'playerctl pause; exec $lock; swaymsg "output * power off"'     unlock 'swaymsg "output * power on"'     after-resume 'swaymsg "output * power on"'
 #
@@ -121,7 +126,7 @@ exec_always swayidle -w     lock 'exec $lock'     before-sleep 'playerctl pause;
 ## Setting br keyboard
 input type:keyboard {
     xkb_layout br
-    # xkb_variant thinkpad
+    xkb_variant thinkpad
     # xkb_options grp:rctrl_toggle
 }
 
