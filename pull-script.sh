@@ -1,5 +1,6 @@
 #!/bin/fish
 cp -rf ~/.config/fish ~/Projects/linuxStuff/sway-n-vim/.config
+cp -rf ~/.config/kitty ~/Projects/linuxStuff/sway-n-vim/.config
 cp -rf ~/.config/wayvnc ~/Projects/linuxStuff/sway-n-vim/.config
 cp -rf ~/.config/cmus ~/Projects/linuxStuff/sway-n-vim/.config
 cp -rf ~/.config/nvim ~/Projects/linuxStuff/sway-n-vim/.config
