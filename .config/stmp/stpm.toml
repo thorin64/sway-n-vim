@@ -1,0 +1,14 @@
+[auth]
+username = 'thorin'
+password = 'necropad666'
+plaintext = true  # Use 'legacy' unsalted password authentication (default: false)
+
+[server]
+host = 'http://192.168.0.20:4533'
+scrobble = true  # Use Subsonic scrobbling for last.fm/ListenBrainz (default: false)
+
+[client]
+random-songs = 50
+
+[ui]
+spinner = '▁▂▃▄▅▆▇█▇▆▅▄▃▂▁'
