@@ -24,10 +24,8 @@ client.urgent           "#e4d00a" "#00000080"      "#00ff41"  "#e4d00a"  "#e4d00
 # Gaps between windows
 gaps inner 3px
 gaps outer 3px
-exec darkman set dark
-exec bluetoothctl power off
 # Logo key. Use Mod1 for Alt. | Mod4 for Super
-set $mod Mod1
+set $mod Mod4
 # Home row direction keys, like vim
 set $left h
 set $down j
@@ -49,9 +47,18 @@ set $menu fuzzel --show run
 # exec swww img ~/Pictures/matrixAnimated.gif
 # exec mpvpaper 'HDMI-A-1' Videos/WallpapersLive/hwamd.mp4 --mpv-options "--noaudio --loop"
 
-    output HDMI-A-2 scale 1 position -1920 0 
-    output HDMI-A-2 mode 1920x1080@100Hz
-    output HDMI-A-2 adaptive_sync on
+    # output HDMI-A-2 scale 1 position -1920 0 
+    # output HDMI-A-2 mode 1920x1080@100Hz
+    # output HDMI-A-2 adaptive_sync on
+    
+    # output HDMI-A-3 transform 270
+# output VGA-1 power on
+# output VGA-1 scale 1 position 0 0
+# output HDMI-A-3 power on
+# output HDMI-A-3 scale 1 position 1920 0
+# output LVDS-1 enable
+# output LVDS-1 power on
+# output LVDS-1 scale 1 position 3200 0  
 
     #  output HDMI-A-1 mode 1920x1080@100Hz
     # output HDMI-A-2 mode 1920x1080@60Hz
@@ -74,19 +81,20 @@ bindsym $mod+Shift+e exec nautilus
 
 ### auto exec
 exec mako
+exec swaymsg "exec $term -e bluetoothctl power off"
 # exec swaymsg "workspace 2; exec es-de;"
 exec wayvnc -L=debug --max-fps=60 --gpu --render-cursor
 exec lxqt-policykit-agent
 exec_always swaymsg "workspace 1; splith;"
-exec_always swaymsg "workspace 1; exec $term -e tuime; splith;"
+exec_always swaymsg "workspace 1; exec $term -e soniclair; splith;"
 exec_always sleep 0.8s && swaymsg "workspace 1; exec $term; splitv;"
 exec_always sleep 0.9s && swaymsg "focus up"
-exec_always sleep 1.0s && swaymsg "workspace 1; exec $term -e ranger; splith; mode "resize";"
-exec_always sleep 1.1s && swaymsg "workspace 1; exec $term -e htop; splith;"
+exec_always sleep 1.0s && swaymsg "workspace 1; exec $term -e tuime; splith; mode "resize";"
+exec_always sleep 1.1s && swaymsg "workspace 1; exec $term -e gotop; splith;"
 exec_always sleep 1.2s && swaymsg "focus left"
 exec_always sleep 1.3s && swaymsg "focus left; resize shrink width 250px; mode "default";"
 exec_always sleep 1.4s && swaymsg "focus down; mode "default";"
-exec_always sleep 1.6s && swaymsg "exec $term -e cmus; splith;"
+exec_always sleep 1.6s && swaymsg "exec $term -e calcurse; splith;"
 ### Idle configuration
 #
 # Example configuration:
