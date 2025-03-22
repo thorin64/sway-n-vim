@@ -1,10 +1,10 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export GTK2_RC_FILES:/usr/share/themes/Adwaita\x2ddark/gtk\x2d2\x2e0/gtkrc
-SETUVAR --export GTK_THEME:Adwaita\x3aDark
+SETUVAR --export GTK_THEME:Adwaita\x2ddark
 SETUVAR --export QT_STYLE_OVERRIDE:Adwaita\x2dDark
-SETUVAR --export SSH_AGENT_PID:908
-SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXXOH4g1M/agent\x2e902
+SETUVAR --export SSH_AGENT_PID:876
+SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXXFlWYF9/agent\x2e875
 SETUVAR SSH_KEYS_TO_AUTOLOAD:\x2essh/necropad
 SETUVAR __fish_initialized:3800
 SETUVAR fish_color_autosuggestion:777777

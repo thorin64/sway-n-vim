@@ -83,10 +83,10 @@
     },
     "clock": {
         // "timezone": "America/Sao_Paulo",
-	"format-alt": "{:%H:%M:%S}",
+	"format-alt": "{:%d/%m/%Y}",
 	"height": 20,
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%d/%m/%Y}",
+        "format": "{:%H:%M:%S}",
 	"interval": 1
     },
     "cpu": {

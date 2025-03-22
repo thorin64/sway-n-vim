@@ -93,8 +93,7 @@ exec_always sleep 1.0s && swaymsg "workspace 1; exec $term -e tuime; splith; mod
 exec_always sleep 1.1s && swaymsg "workspace 1; exec $term -e gotop; splith;"
 exec_always sleep 1.2s && swaymsg "focus left"
 exec_always sleep 1.3s && swaymsg "focus left; resize shrink width 250px; mode "default";"
-exec_always sleep 1.4s && swaymsg "focus down; mode "default";"
-exec_always sleep 1.6s && swaymsg "exec $term -e calcurse; splith;"
+exec_always sleep 1.4s && swaymsg "focus down; mode "default"; exec $term -e calcurse; splith;"
 ### Idle configuration
 #
 # Example configuration:
