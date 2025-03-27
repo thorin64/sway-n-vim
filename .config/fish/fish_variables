@@ -3,8 +3,8 @@
 SETUVAR --export GTK2_RC_FILES:/usr/share/themes/Adwaita\x2ddark/gtk\x2d2\x2e0/gtkrc
 SETUVAR --export GTK_THEME:Adwaita\x2ddark
 SETUVAR --export QT_STYLE_OVERRIDE:Adwaita\x2dDark
-SETUVAR --export SSH_AGENT_PID:876
-SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXXFlWYF9/agent\x2e875
+SETUVAR --export SSH_AGENT_PID:1091
+SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXXlR3oCl/agent\x2e1090
 SETUVAR SSH_KEYS_TO_AUTOLOAD:\x2essh/necropad
 SETUVAR __fish_initialized:3800
 SETUVAR fish_color_autosuggestion:777777
