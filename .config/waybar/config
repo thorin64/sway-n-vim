@@ -35,7 +35,7 @@
         }
     },
     "custom/cmus": {
-	"format": "♪ {text}",
+	"format": "󰐊 {text} 󰎇",
 	//"max-length": 15,
 	"interval": 10,
 	// artist - title
