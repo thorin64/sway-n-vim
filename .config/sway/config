@@ -86,7 +86,7 @@ exec swaymsg "exec $term -e bluetoothctl power off"
 exec wayvnc -L=debug --max-fps=60 --gpu --render-cursor
 exec lxqt-policykit-agent
 exec_always swaymsg "workspace 1; splith;"
-exec_always swaymsg "workspace 1; exec $term -e kew; splith;"
+exec_always swaymsg "workspace 1; exec $term -e cmus; splith;"
 exec_always sleep 0.8s && swaymsg "workspace 1; exec $term; splitv;"
 exec_always sleep 0.9s && swaymsg "focus up"
 # exec_always sleep 1.0s && swaymsg "workspace 1; exec $term -H fastfetch; splith; mode "resize";"
