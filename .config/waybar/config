@@ -5,9 +5,9 @@
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["sway/workspaces", "tray", "cpu", "memory", "temperature", "backlight", "sway/mode", "sway/scratchpad"],
+    "modules-left": ["sway/workspaces", "tray", "cpu", "memory", "temperature", "backlight", "custom/cmus", "sway/mode", "sway/scratchpad" ],
     "modules-center": ["sway/window"],
-    "modules-right": [ "pulseaudio", "network", "bluetooth", "keyboard-state", "sway/language", "battery", "clock", ],
+    "modules-right": [ "pulseaudio", "network", "keyboard-state", "sway/language", "battery", "clock", ],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -34,6 +34,18 @@
             "unlocked":"󰣇"
         }
     },
+    "custom/cmus": {
+	"format": "♪ {text}",
+	//"max-length": 15,
+	"interval": 10,
+	// artist - title
+	"exec": "cmus-remote -C \"format_print '%a - %t'\"",
+	"exec-if": "pgrep cmus",
+	// toggle pause
+	"on-click": "cmus-remote -u",
+	// handle markup entities
+	"escape": true
+},
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
